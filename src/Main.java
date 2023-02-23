@@ -37,7 +37,7 @@ public class Main {
 
         for (int i = 2; i <= max; i++) {
             if (esPrimo[i]) {
-                cuenta++; // Cuenta el número de primos
+                cuenta++; // Cuenta el número de primos.
             }
         }
 
