@@ -1,3 +1,13 @@
+/**
+ * <p>Clase Fecha:</p>
+ * <p>
+ *  Dado un vector de enteros empezando en 2, se tachan todos los múltiplos de 2. A continuación, se encuentra el siguiente
+ *  entero no tachado y se tachan todos sus múltiplos. El proceso se repite hasta que se pasa de la
+ *  raíz cuadrada del valor máximo. Todos los números que queden sin tachar son números primos.
+ * </p>
+ * @version 3.0
+ * @author Dylan Blasco de Souza
+ */
 import java.util.Scanner;
 
 public class Main {
@@ -14,7 +24,11 @@ public class Main {
         imprimirVector(primos);
     }
 
-    // Genera un array con números primos hasta el valor máximo especificado
+    /**
+     * Método que genera un array con números primos hasta el valor máximo especificado.
+     * @param max Valor máximo especificado
+     * @return Array de números primos
+     */
     public static int[] generarPrimos(int max) {
         if (max < 2) {
             return new int[0]; // Retorna un vector vacío si max < 2
@@ -53,7 +67,10 @@ public class Main {
         return primos;
     }
 
-    // Imprime los números del 1 al valor especificado
+    /**
+     * Método que imprime los números del 1 al valor especificado.
+     * @param max Valor máximo especificado
+     */
     public static void imprimirVector(int max) {
         for (int i = 1; i <= max; i++) {
             if (i % 10 == 0) {
@@ -63,7 +80,10 @@ public class Main {
         }
     }
 
-    // Imprime los valores de un vector
+    /**
+     * Método que imprime los valores de un vector.
+     * @param vector Vector a imprimir
+     */
     public static void imprimirVector(int[] vector) {
         for (int i = 0; i < vector.length; i++) {
             if (i % 10 == 0) {
